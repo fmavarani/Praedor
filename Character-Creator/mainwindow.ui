@@ -232,27 +232,33 @@
         <string>0</string>
        </property>
       </widget>
-      <zorder>name</zorder>
-      <zorder>label</zorder>
-      <zorder>label_2</zorder>
-      <zorder>STR</zorder>
-      <zorder>label_3</zorder>
-      <zorder>CON</zorder>
-      <zorder>AGI</zorder>
-      <zorder>label_4</zorder>
-      <zorder>AWE</zorder>
-      <zorder>label_5</zorder>
-      <zorder>label_6</zorder>
-      <zorder>BRA</zorder>
-      <zorder>CHA</zorder>
-      <zorder>label_7</zorder>
-      <zorder>tabWidget</zorder>
-      <zorder>label_8</zorder>
-      <zorder>Damage</zorder>
+      <widget class="QLabel" name="mweight">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>69</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>70</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Weight Capacity:</string>
+       </property>
+      </widget>
      </widget>
-     <zorder>frame</zorder>
-     <zorder>frame</zorder>
-     <zorder>frame</zorder>
     </widget>
     <widget class="QWidget" name="Equipment">
      <attribute name="title">

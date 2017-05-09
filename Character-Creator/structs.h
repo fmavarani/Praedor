@@ -25,5 +25,12 @@ struct animal{
     int init;
     protection DR;
 };
+struct atributes{
+        int STR,AGI,CON,CHA,AWE,BRA;
+};
+
+struct weight{
+        int max,current;
+};
 
 #endif // STRUCTS_H

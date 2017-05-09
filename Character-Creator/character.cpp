@@ -6,73 +6,53 @@ character::character()
 }
 
 int character::getSTR() const {
-    return STR;
+    return stats.STR;
 }
 
 void character::setSTR(int STR) {
-    character::STR = STR;
+    character::stats.STR = STR;
 }
 
 void character::setAGI(int AGI) {
-    character::AGI = AGI;
+    character::stats.AGI = AGI;
 }
 
 void character::setCON(int CON) {
-    character::CON = CON;
+    character::stats.CON = CON;
 }
 
 void character::setCHA(int CHA) {
-    character::CHA = CHA;
+    character::stats.CHA = CHA;
 }
 
 void character::setAWE(int AWE) {
-    character::AWE = AWE;
+    character::stats.AWE = AWE;
 }
 
 void character::setBRA(int BRA) {
-    character::BRA = BRA;
-}
-void character::setDamage(int Damage) {
-    character::Damage = Damage;
+    character::stats.BRA = BRA;
 }
 
-void character::setName(const string &name) {
-    character::name = name;
-}
 
-int character::getDamage() const {
-    return Damage;
-}
+
 int character::getAGI() const {
-    return AGI;
+    return stats.AGI;
 }
 
 int character::getCON() const {
-    return CON;
+    return stats.CON;
 }
 
 int character::getCHA() const {
-    return CHA;
+    return stats.CHA;
 }
 
 int character::getAWE() const {
-    return AWE;
+    return stats.AWE;
 }
 
 int character::getBRA() const {
-    return BRA;
-}
-
-const string &character::getName() const {
-    return name;
-}
-
-const string &character::getHome() const {
-    return home;
-}
-
-void character::setHome(const string &home) {
-    character::home = home;
+    return stats.BRA;
 }
 
 const string &character::getClass() const {
@@ -94,3 +74,44 @@ void character::setBackpack(const queue<items> &backpack) {
 const int *character::getBlood() const {
     return blood;
 }
+
+int character::getMax_blood() const {
+    return max_blood;
+}
+
+void character::setMax_blood(int max_blood) {
+    character::max_blood = max_blood;
+}
+
+const protection &character::getDR() const {
+    return DR;
+}
+
+void character::setDR(const protection &DR) {
+    character::DR = DR;
+}
+
+int character::getDamage() const {
+    return Damage;
+}
+
+void character::setDamage(int Damage) {
+    character::Damage = Damage;
+}
+
+int character::getMaxWeight() const {
+    return Weight.max;
+}
+
+void character::setMaxWeight(int maxWeight) {
+    character::Weight.max = maxWeight;
+}
+
+int character::getCWeight() const {
+    return Weight.current;
+}
+
+void character::setCWeight(int cWeight) {
+    character::Weight.current = cWeight;
+}
+

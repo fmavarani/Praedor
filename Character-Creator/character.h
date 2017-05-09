@@ -7,18 +7,36 @@ using namespace std;
 class character
 {
 private:
-    int STR,AGI,CON,CHA,AWE,BRA;
-    string name;
-    string home;
+    atributes stats;
     string Class;
-    int blood[4];
-    int max_blood;
+    int blood[4], max_blood;
     protection DR;
     queue<items> backpack;
     int Damage;
+    weight Weight;
 
 public:
+    int getMaxWeight() const;
+
+    void setMaxWeight(int maxWeight);
+
+    int getCWeight() const;
+
+    void setCWeight(int cWeight);
+
+    int getDamage() const;
+
+    void setDamage(int Damage);
+
     character();
+
+    int getMax_blood() const;
+
+    void setMax_blood(int max_blood);
+
+    const protection &getDR() const;
+
+    void setDR(const protection &DR);
 
     const int *getBlood() const;
 
@@ -46,11 +64,7 @@ public:
 
     int getBRA() const;
 
-    int getDamage() const;
-
     const string &getName() const;
-
-    void setDamage(int Damage);
 
     void setSTR(int STR);
 

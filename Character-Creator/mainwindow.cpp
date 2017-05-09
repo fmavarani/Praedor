@@ -19,6 +19,8 @@ void MainWindow::update()
 {
 
     ui->Damage->setText(QString::number(user.getDamage()));
+    ui->mweight->setText(QString::number(user.getMaxWeight()));
+
 }
 void MainWindow::on_STR_valueChanged(int arg1)
 {
@@ -31,6 +33,8 @@ void MainWindow::on_STR_valueChanged(int arg1)
  if(user.getSTR()>=18)s="2";
  if(user.getSTR()>=20)s="3";
  user.setDamage(s.toInt());
+ //int x=arg1*25;
+ user.setMaxWeight(arg1*25);
  update();
 
 }
